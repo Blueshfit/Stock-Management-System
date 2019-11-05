@@ -1,0 +1,71 @@
+E:\BITM Project\Stock Management System\Stock Management System\bin\Stock Management System.dll.config
+E:\BITM Project\Stock Management System\Stock Management System\bin\Stock Management System.dll
+E:\BITM Project\Stock Management System\Stock Management System\bin\Stock Management System.pdb
+E:\BITM Project\Stock Management System\Stock Management System\bin\roslyn\csc.exe
+E:\BITM Project\Stock Management System\Stock Management System\bin\roslyn\csc.exe.config
+E:\BITM Project\Stock Management System\Stock Management System\bin\roslyn\csc.rsp
+E:\BITM Project\Stock Management System\Stock Management System\bin\roslyn\csi.exe
+E:\BITM Project\Stock Management System\Stock Management System\bin\roslyn\csi.exe.config
+E:\BITM Project\Stock Management System\Stock Management System\bin\roslyn\csi.rsp
+E:\BITM Project\Stock Management System\Stock Management System\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\BITM Project\Stock Management System\Stock Management System\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\BITM Project\Stock Management System\Stock Management System\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\BITM Project\Stock Management System\Stock Management System\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\BITM Project\Stock Management System\Stock Management System\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\BITM Project\Stock Management System\Stock Management System\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\BITM Project\Stock Management System\Stock Management System\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\BITM Project\Stock Management System\Stock Management System\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\BITM Project\Stock Management System\Stock Management System\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\BITM Project\Stock Management System\Stock Management System\bin\roslyn\Microsoft.Managed.Core.targets
+E:\BITM Project\Stock Management System\Stock Management System\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\BITM Project\Stock Management System\Stock Management System\bin\roslyn\System.AppContext.dll
+E:\BITM Project\Stock Management System\Stock Management System\bin\roslyn\System.Collections.Immutable.dll
+E:\BITM Project\Stock Management System\Stock Management System\bin\roslyn\System.Console.dll
+E:\BITM Project\Stock Management System\Stock Management System\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\BITM Project\Stock Management System\Stock Management System\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\BITM Project\Stock Management System\Stock Management System\bin\roslyn\System.IO.Compression.dll
+E:\BITM Project\Stock Management System\Stock Management System\bin\roslyn\System.IO.FileSystem.dll
+E:\BITM Project\Stock Management System\Stock Management System\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\BITM Project\Stock Management System\Stock Management System\bin\roslyn\System.IO.Pipes.AccessControl.dll
+E:\BITM Project\Stock Management System\Stock Management System\bin\roslyn\System.IO.Pipes.dll
+E:\BITM Project\Stock Management System\Stock Management System\bin\roslyn\System.Reflection.Metadata.dll
+E:\BITM Project\Stock Management System\Stock Management System\bin\roslyn\System.Security.AccessControl.dll
+E:\BITM Project\Stock Management System\Stock Management System\bin\roslyn\System.Security.Claims.dll
+E:\BITM Project\Stock Management System\Stock Management System\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\BITM Project\Stock Management System\Stock Management System\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\BITM Project\Stock Management System\Stock Management System\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\BITM Project\Stock Management System\Stock Management System\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\BITM Project\Stock Management System\Stock Management System\bin\roslyn\System.Security.Principal.Windows.dll
+E:\BITM Project\Stock Management System\Stock Management System\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\BITM Project\Stock Management System\Stock Management System\bin\roslyn\System.ValueTuple.dll
+E:\BITM Project\Stock Management System\Stock Management System\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\BITM Project\Stock Management System\Stock Management System\bin\roslyn\System.Xml.XmlDocument.dll
+E:\BITM Project\Stock Management System\Stock Management System\bin\roslyn\System.Xml.XPath.dll
+E:\BITM Project\Stock Management System\Stock Management System\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\BITM Project\Stock Management System\Stock Management System\bin\roslyn\vbc.exe
+E:\BITM Project\Stock Management System\Stock Management System\bin\roslyn\vbc.exe.config
+E:\BITM Project\Stock Management System\Stock Management System\bin\roslyn\vbc.rsp
+E:\BITM Project\Stock Management System\Stock Management System\bin\roslyn\VBCSCompiler.exe
+E:\BITM Project\Stock Management System\Stock Management System\bin\roslyn\VBCSCompiler.exe.config
+E:\BITM Project\Stock Management System\Stock Management System\bin\Antlr3.Runtime.dll
+E:\BITM Project\Stock Management System\Stock Management System\bin\AspNet.ScriptManager.bootstrap.dll
+E:\BITM Project\Stock Management System\Stock Management System\bin\AspNet.ScriptManager.jQuery.dll
+E:\BITM Project\Stock Management System\Stock Management System\bin\Microsoft.AspNet.FriendlyUrls.dll
+E:\BITM Project\Stock Management System\Stock Management System\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+E:\BITM Project\Stock Management System\Stock Management System\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\BITM Project\Stock Management System\Stock Management System\bin\Microsoft.ScriptManager.MSAjax.dll
+E:\BITM Project\Stock Management System\Stock Management System\bin\Microsoft.ScriptManager.WebForms.dll
+E:\BITM Project\Stock Management System\Stock Management System\bin\Microsoft.Web.Infrastructure.dll
+E:\BITM Project\Stock Management System\Stock Management System\bin\Newtonsoft.Json.dll
+E:\BITM Project\Stock Management System\Stock Management System\bin\System.Web.Optimization.dll
+E:\BITM Project\Stock Management System\Stock Management System\bin\WebGrease.dll
+E:\BITM Project\Stock Management System\Stock Management System\bin\System.Web.Optimization.xml
+E:\BITM Project\Stock Management System\Stock Management System\bin\Newtonsoft.Json.xml
+E:\BITM Project\Stock Management System\Stock Management System\bin\Antlr3.Runtime.pdb
+E:\BITM Project\Stock Management System\Stock Management System\bin\Microsoft.AspNet.FriendlyUrls.xml
+E:\BITM Project\Stock Management System\Stock Management System\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\BITM Project\Stock Management System\Stock Management System\obj\Debug\Stock Management System.csprojAssemblyReference.cache
+E:\BITM Project\Stock Management System\Stock Management System\obj\Debug\Stock Management System.csproj.CoreCompileInputs.cache
+E:\BITM Project\Stock Management System\Stock Management System\obj\Debug\Stock Management System.csproj.CopyComplete
+E:\BITM Project\Stock Management System\Stock Management System\obj\Debug\Stock Management System.dll
+E:\BITM Project\Stock Management System\Stock Management System\obj\Debug\Stock Management System.pdb
