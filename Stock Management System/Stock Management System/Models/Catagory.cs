@@ -7,6 +7,10 @@ namespace Stock_Management_System.Models
 {
 	public class Catagory
 	{
+		public Catagory()
+		{
+		}
+
 		public Catagory(string catagoryName)
 		{
 			CatagoryName = catagoryName;
