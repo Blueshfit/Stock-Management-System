@@ -20,7 +20,7 @@
 		<tr>
 			<td class="text-right" style="width: 194px">&nbsp;</td>
 			<td class="text-right" style="width: 254px">
-				<asp:Button ID="searchButton" runat="server" Text="Search" />
+				<asp:Button ID="searchButton" runat="server" Text="Search" OnClick="searchButton_Click" />
 			</td>
 			<td>&nbsp;</td>
 		</tr>
@@ -41,7 +41,7 @@
 				</asp:TemplateField>
 				<asp:TemplateField HeaderText="Company">
 					<ItemTemplate>
-						<%#Eval("ComapnyName") %>
+						<%#Eval("CompanyName") %>
 					</ItemTemplate>
 				</asp:TemplateField>
 				<asp:TemplateField HeaderText="Catagory">
@@ -51,7 +51,7 @@
 				</asp:TemplateField>
 				<asp:TemplateField HeaderText="Available Quantity">
 					<ItemTemplate>
-						<%#Eval("Quantity") %>
+						<%#Eval("Available_Quantity") %>
 					</ItemTemplate>
 				</asp:TemplateField>
 				<asp:TemplateField HeaderText="Reorder Level">

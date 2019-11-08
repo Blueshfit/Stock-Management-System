@@ -58,13 +58,13 @@ namespace Stock_Management_System {
         protected global::System.Web.UI.WebControls.Label reOrderLabel;
         
         /// <summary>
-        /// TextBox1 control.
+        /// reorderLabelSet control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox1;
+        protected global::System.Web.UI.WebControls.Label reorderLabelSet;
         
         /// <summary>
         /// availableQuantityLabel control.
@@ -76,13 +76,13 @@ namespace Stock_Management_System {
         protected global::System.Web.UI.WebControls.Label availableQuantityLabel;
         
         /// <summary>
-        /// availableQuantityTextBox control.
+        /// availableQuantityLabelSet control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox availableQuantityTextBox;
+        protected global::System.Web.UI.WebControls.Label availableQuantityLabelSet;
         
         /// <summary>
         /// stockInQuantityLabel control.
@@ -101,6 +101,15 @@ namespace Stock_Management_System {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox stockInQuantityTextBox;
+        
+        /// <summary>
+        /// messageLabel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label messageLabel;
         
         /// <summary>
         /// saveButton control.

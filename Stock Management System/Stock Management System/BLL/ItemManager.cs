@@ -1,5 +1,6 @@
 ﻿using Stock_Management_System.DAL;
 using Stock_Management_System.Models;
+using Stock_Management_System.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -28,6 +29,10 @@ namespace Stock_Management_System.BLL
 			{
 				return "Cannot setup the Item.";
 			}
+		}
+		public List<CatagoryCompanyWISeItemView> GetAllItems(Item item)
+		{
+			return itemGateway.GetAllItems(item);
 		}
 	}
 }

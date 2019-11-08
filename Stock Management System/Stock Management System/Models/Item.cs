@@ -11,6 +11,13 @@ namespace Stock_Management_System.Models
 		{
 		}
 
+		public Item(int itemId, int comapnyId, string quantity)
+		{
+			ItemId = itemId;
+			ComapnyId = comapnyId;
+			Quantity = quantity;
+		}
+
 		public Item(string itemName, int catagoryId, int comapnyId, string reorderLevel)
 		{
 			ItemName = itemName;
