@@ -14,11 +14,11 @@ namespace Stock_Management_System.Models
 
 		public Company(int comapnyId, string companyName)
 		{
-			ComapnyId = comapnyId;
+			CompanyId = comapnyId;
 			CompanyName = companyName;
 		}
 
-		public int ComapnyId { set; get; }
+		public int CompanyId { set; get; }
 		public string CompanyName { set; get; }
 	}
 }

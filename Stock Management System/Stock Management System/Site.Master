@@ -53,8 +53,16 @@
                         <li><a runat="server" href="~/">Home</a></li>
                         <%--<li><a runat="server" href="~/About">About</a></li>
                         <li><a runat="server" href="~/Contact">Contact</a></li>--%>
+						<li><a href="LogInForm.aspx" runat="server">Log In</a></li>
+						<li><a href="CatagorySetupPage.aspx" runat="server">Catagory Setup</a></li>
+						<li><a runat="server" href="CompanySetUpUi.aspx">Company Setup</a></li>
+						<li><a runat="server" href="ItemSetupUi.aspx">Item Setup</a></li>
+
+
                         <li><a runat="server" href="StockInUi.aspx">Stock In</a></li>
                         <li><a runat="server" href="StockOutUi.aspx">Stock Out</a></li>
+						<li><a href="SearchVIewItemsSummaryUI.aspx">AVIS</a></li>
+						<li><a href="ViewItemBetweenDatesUI.aspx">VIBD</a></li>
                     </ul>
                 </div>
             </div>

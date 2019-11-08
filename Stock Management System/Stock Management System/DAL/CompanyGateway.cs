@@ -8,18 +8,17 @@ using System.Web.Configuration;
 
 namespace Stock_Management_System.DAL
 {
-	public class CatagoryGateway
+	public class CompanyGateway
 	{
 		string connectionString = WebConfigurationManager.ConnectionStrings["SMDB"].ConnectionString;
-	      public bool ExistCatagory(Catagory catagory)
+		public bool isExistCompany(string name)
 		{
 			SqlConnection connection = new SqlConnection(connectionString);
-
-			string query = "SELECT *FROM Catagory_tbl WHERE CatagoryName ='" + catagory.CatagoryName + "'";
+			string query = "SELECT * FROM Company_tbl WHERE CompanyName = '" + name + "'";
 			SqlCommand command = new SqlCommand(query, connection);
 			connection.Open();
 			SqlDataReader reader = command.ExecuteReader();
-			
+
 			if (reader.Read())
 			{
 				return true;
@@ -30,38 +29,41 @@ namespace Stock_Management_System.DAL
 			}
 			connection.Close();
 		}
-
-		public int InsertCatagory(Catagory catagory)
+		public bool InsertComapny(string name)
 		{
 			SqlConnection connection = new SqlConnection(connectionString);
-			string query = "INSERT INTO Catagory_tbl (CatagoryName) VALUES('" + catagory.CatagoryName + "')";
+			string query = "INSERT INTO Company_tbl (CompanyName) VALUES ('" + name + "')";
 			SqlCommand command = new SqlCommand(query, connection);
 			connection.Open();
+
 			int rowEffect = command.ExecuteNonQuery();
-			connection.Close();
-			return rowEffect;
+			if (rowEffect > 0)
+			{
+				return true;
+			}
+			else
+			{
+				return false;
+			}
 		}
-		public List<Catagory> GetAllCatagories()
+		public List<Company> GetAllCompanies()
 		{
-			List<Catagory> catagories = new List<Catagory>();
+			List<Company> companies = new List<Company>();
 			SqlConnection connection = new SqlConnection(connectionString);
-			string query = "SELECT * FROM Catagory_tbl";
+			string query = "SELECT * FROM Company_tbl";
 			SqlCommand command = new SqlCommand(query, connection);
 			connection.Open();
 			SqlDataReader reader = command.ExecuteReader();
 			while (reader.Read())
 			{
-				Catagory catagory = new Catagory();
-				catagory.CatagoryId = (int)reader["CatagoryId"];
-				catagory.CatagoryName = reader["CatagoryName"].ToString();
-
-				catagories.Add(catagory);
+				Company company = new Company((int)reader["CompanyId"],reader["CompanyName"].ToString());
+				
+				companies.Add(company);
 			}
 			connection.Close();
-			return catagories;
+			return companies;
 
 
 		}
-
 	}
 }

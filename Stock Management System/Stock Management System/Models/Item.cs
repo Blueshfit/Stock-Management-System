@@ -7,6 +7,27 @@ namespace Stock_Management_System.Models
 {
 	public class Item
 	{
+		public Item()
+		{
+		}
+
+		public Item(string itemName, int catagoryId, int comapnyId, string reorderLevel)
+		{
+			ItemName = itemName;
+			CatagoryId = catagoryId;
+			ComapnyId = comapnyId;
+			ReorderLevel = reorderLevel;
+		}
+
+		public Item(string itemName, int catagoryId, int comapnyId, string reorderLevel, string quantity)
+		{
+			ItemName = itemName;
+			CatagoryId = catagoryId;
+			ComapnyId = comapnyId;
+			ReorderLevel = reorderLevel;
+			Quantity = quantity;
+		}
+
 		public Item(int itemId, string itemName, int catagoryId, int comapnyId, string reorderLevel, string quantity)
 		{
 			ItemId = itemId;

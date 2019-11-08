@@ -2,7 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
     <asp:Label ID="companyLabel" runat="server" Text="Company"></asp:Label>
-    <asp:DropDownList ID="companyDropDownList" runat="server"></asp:DropDownList>
+    <asp:DropDownList ID="companyDropDownList" runat="server" OnSelectedIndexChanged="companyDropDownList_SelectedIndexChanged" AutoPostBack="true"></asp:DropDownList>
     <br />
 
     <asp:Label ID="itemLabel" runat="server" Text="Item"></asp:Label>
@@ -21,5 +21,5 @@
     <asp:TextBox ID="stockInQuantityTextBox" runat="server"></asp:TextBox>
     <br />
 
-    <asp:Button ID="saveButton" runat="server" Text="Save" />
+    <asp:Button ID="saveButton" runat="server" Text="Save" OnClick="saveButton_Click" />
 </asp:Content>
