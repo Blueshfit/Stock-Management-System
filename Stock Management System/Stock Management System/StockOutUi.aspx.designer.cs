@@ -13,94 +13,58 @@ namespace Stock_Management_System {
     public partial class StockOutUi {
         
         /// <summary>
-        /// companyLabel control.
+        /// ddlCompany control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label companyLabel;
+        protected global::System.Web.UI.WebControls.DropDownList ddlCompany;
         
         /// <summary>
-        /// companyDropDownList control.
+        /// ddlItem control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList companyDropDownList;
+        protected global::System.Web.UI.WebControls.DropDownList ddlItem;
         
         /// <summary>
-        /// itemLabel control.
+        /// inputReorderLevel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label itemLabel;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText inputReorderLevel;
         
         /// <summary>
-        /// itemDropDownList control.
+        /// inputAvailableQuantity control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList itemDropDownList;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText inputAvailableQuantity;
         
         /// <summary>
-        /// reOrderLabel control.
+        /// inputStockOutQuantity control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label reOrderLabel;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText inputStockOutQuantity;
         
         /// <summary>
-        /// TextBox1 control.
+        /// RequiredFieldValidator1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox1;
-        
-        /// <summary>
-        /// availableQuantityLabel control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label availableQuantityLabel;
-        
-        /// <summary>
-        /// availableQuantityTextBox control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox availableQuantityTextBox;
-        
-        /// <summary>
-        /// stockOutQuantityLabel control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label stockOutQuantityLabel;
-        
-        /// <summary>
-        /// stockOutQuantityTextBox control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox stockOutQuantityTextBox;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator1;
         
         /// <summary>
         /// addButton control.
@@ -112,13 +76,22 @@ namespace Stock_Management_System {
         protected global::System.Web.UI.WebControls.Button addButton;
         
         /// <summary>
-        /// stockOutGridView control.
+        /// messageLabel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView stockOutGridView;
+        protected global::System.Web.UI.WebControls.Label messageLabel;
+        
+        /// <summary>
+        /// companyGridView control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView companyGridView;
         
         /// <summary>
         /// sellButton control.

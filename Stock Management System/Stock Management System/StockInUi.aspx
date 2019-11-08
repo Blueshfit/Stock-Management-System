@@ -1,25 +1,34 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="StockInUi.aspx.cs" Inherits="Stock_Management_System.StockInUi" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
-    <asp:Label ID="companyLabel" runat="server" Text="Company"></asp:Label>
-    <asp:DropDownList ID="companyDropDownList" runat="server"></asp:DropDownList>
-    <br />
+    <div class="form-group">
+        <label for="inputCompany">Company</label>
+        <asp:DropDownList ID="ddlCompany" class="form-control" runat="server"></asp:DropDownList>
+    </div>
 
-    <asp:Label ID="itemLabel" runat="server" Text="Item"></asp:Label>
-    <asp:DropDownList ID="itemDropDownList" runat="server"></asp:DropDownList>
-    <br />
+    <div class="form-group">
+        <label for="inputItem">Item</label>
+        <asp:DropDownList ID="ddlItem" class="form-control" runat="server"></asp:DropDownList>
+    </div>
 
-    <asp:Label ID="reOrderLabel" runat="server" Text="Reorder Level"></asp:Label>
-    <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
-    <br />
+    <div class="form-group">
+        <label for="inputReorderLevel">Reorder Level</label>
+        <input type="text" class="form-control" id="inputReorderLevel" runat="server" visible="True" />
+    </div>
 
-    <asp:Label ID="availableQuantityLabel" runat="server" Text="Available Quantity"></asp:Label>
-    <asp:TextBox ID="availableQuantityTextBox" runat="server"></asp:TextBox>
-    <br />
+    <div class="form-group">
+        <label for="inputAvailableQuantity">Available Quantity</label>
+        <input type="text" class="form-control" id="inputAvailableQuantity" runat="server"/>
+    </div>
 
-    <asp:Label ID="stockInQuantityLabel" runat="server" Text="Stock In Quantity"></asp:Label>
-    <asp:TextBox ID="stockInQuantityTextBox" runat="server"></asp:TextBox>
-    <br />
+    <div class="form-group">
+        <label for="inputStockInQuantity">Stock In Quantity</label>
+        <input type="text" class="form-control" id="inputStockInQuantity" runat="server" placeholder="Enter stock in Quantity" />
+        <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" Display="Dynamic" ControlToValidate="inputStockInQuantity" ForeColor="red" ErrorMessage="Quantity Can't be empty"></asp:RequiredFieldValidator>
+    </div>
 
-    <asp:Button ID="saveButton" runat="server" Text="Save" />
+    <asp:Button ID="saveButton" class="btn btn-primary" runat="server" Text="Save" OnClick="saveButton_Click" />
+
+    <br />
+    <asp:Label ID="messageLabel" runat="server"></asp:Label>
 </asp:Content>

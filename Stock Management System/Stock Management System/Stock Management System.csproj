@@ -106,6 +106,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
+    <Content Include="CatagorySetupPage.aspx" />
+    <Content Include="CompanySetUpUi.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -125,6 +127,8 @@
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
+    <Content Include="ItemSetupUi.aspx" />
+    <Content Include="LogInForm.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
@@ -153,9 +157,11 @@
     <Content Include="Scripts\WebForms\WebForms.js" />
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
+    <Content Include="SearchVIewItemsSummaryUI.aspx" />
     <Content Include="Site.Master" />
     <Content Include="StockInUi.aspx" />
     <Content Include="StockOutUi.aspx" />
+    <Content Include="ViewItemBetweenDatesUI.aspx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
@@ -171,6 +177,25 @@
       <DependentUpon>About.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="BLL\CatagoryManager.cs" />
+    <Compile Include="BLL\CompanyManager.cs" />
+    <Compile Include="BLL\ItemManager.cs" />
+    <Compile Include="BLL\StockManager.cs" />
+    <Compile Include="BLL\UserManager.cs" />
+    <Compile Include="CatagorySetupPage.aspx.cs">
+      <DependentUpon>CatagorySetupPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CatagorySetupPage.aspx.designer.cs">
+      <DependentUpon>CatagorySetupPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CompanySetUpUi.aspx.cs">
+      <DependentUpon>CompanySetUpUi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CompanySetUpUi.aspx.designer.cs">
+      <DependentUpon>CompanySetUpUi.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -178,6 +203,11 @@
     <Compile Include="Contact.aspx.designer.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
     </Compile>
+    <Compile Include="DAL\CatagoryGateway.cs" />
+    <Compile Include="DAL\CompanyGateway.cs" />
+    <Compile Include="DAL\ItemGateway.cs" />
+    <Compile Include="DAL\Stockgateway.cs" />
+    <Compile Include="DAL\UserGateway.cs" />
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -188,7 +218,32 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="ItemSetupUi.aspx.cs">
+      <DependentUpon>ItemSetupUi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ItemSetupUi.aspx.designer.cs">
+      <DependentUpon>ItemSetupUi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LogInForm.aspx.cs">
+      <DependentUpon>LogInForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LogInForm.aspx.designer.cs">
+      <DependentUpon>LogInForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Catagory.cs" />
+    <Compile Include="Models\Company.cs" />
+    <Compile Include="Models\Item.cs" />
+    <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SearchVIewItemsSummaryUI.aspx.cs">
+      <DependentUpon>SearchVIewItemsSummaryUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SearchVIewItemsSummaryUI.aspx.designer.cs">
+      <DependentUpon>SearchVIewItemsSummaryUI.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -216,6 +271,13 @@
     </Compile>
     <Compile Include="StockOutUi.aspx.designer.cs">
       <DependentUpon>StockOutUi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewItemBetweenDatesUI.aspx.cs">
+      <DependentUpon>ViewItemBetweenDatesUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewItemBetweenDatesUI.aspx.designer.cs">
+      <DependentUpon>ViewItemBetweenDatesUI.aspx</DependentUpon>
     </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>

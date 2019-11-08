@@ -40,5 +40,13 @@ namespace Stock_Management_System
 			catagoryGridView.DataSource = catagories;
 			catagoryGridView.DataBind();
 		}
+
+		protected void catagoryGridView_RowCommand(object sender, GridViewCommandEventArgs e)
+		{
+			GridView _gridView = (GridView)sender;
+			int _selectedIndex = int.Parse(e.CommandArgument.ToString());
+			messageLabel.Text = _selectedIndex.ToString();
+
+		}
 	}
 }

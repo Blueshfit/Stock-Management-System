@@ -7,6 +7,10 @@ namespace Stock_Management_System.Models
 {
 	public class User
 	{
+		public User()
+		{
+		}
+
 		public User(string userName, string password)
 		{
 			UserName = userName;
