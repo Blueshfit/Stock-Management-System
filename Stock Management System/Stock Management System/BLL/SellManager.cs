@@ -14,5 +14,9 @@ namespace Stock_Management_System.BLL
 		{
 			sellGateway.InsertSell(item);
 		}
+		public List<Sell> GetAllSellitemBetweenDate(string fromDate,string toDate)
+		{
+			return sellGateway.GetAllSeelItemBewtweenDate(fromDate, toDate);
+		}
 	}
 }
