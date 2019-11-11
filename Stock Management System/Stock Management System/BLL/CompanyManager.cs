@@ -32,5 +32,10 @@ namespace Stock_Management_System.BLL
 		{
 			return companyGateway.GetAllCompanies();
 		}
+
+        public void UpdateCompanyName(int companyId, string companyName)
+        {
+            companyGateway.UpdateCompany(companyId,companyName);
+        }
 	}
 }

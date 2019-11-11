@@ -17,10 +17,10 @@ namespace Stock_Management_System
             {
                 Response.Redirect("LogInForm.aspx");
             }
-            else
-            {
-                ShowAllCatagories();
-            }
+            //else
+            //{
+            //    ShowAllCatagories();
+            //}
 			
 
 		}
@@ -31,7 +31,7 @@ namespace Stock_Management_System
 			Catagory catagory = new Catagory(catagoryName);
 			string message=InsertCatagroy(catagory);
 			messageLabel.Text = message;
-			ShowAllCatagories();
+			//ShowAllCatagories();
 		}
 
 		private string InsertCatagroy(Catagory catagory)
@@ -40,14 +40,14 @@ namespace Stock_Management_System
 			return catagoryManager.Insertcatagory(catagory);
 			
 		}
-		private void ShowAllCatagories()
-		{
-			CatagoryManager catagoryManager = new CatagoryManager();
-			List<Catagory> catagories = new List<Catagory>();
-			catagories = catagoryManager.GetCatagories();
-			catagoryGridView.DataSource = catagories;
-			catagoryGridView.DataBind();
-		}
+		//private void ShowAllCatagories()
+		//{
+		//	CatagoryManager catagoryManager = new CatagoryManager();
+		//	List<Catagory> catagories = new List<Catagory>();
+		//	catagories = catagoryManager.GetCatagories();
+		//	//catagoryGridView.DataSource = catagories;
+		//	//catagoryGridView.DataBind();
+		//}
 
 		protected void catagoryGridView_RowCommand(object sender, GridViewCommandEventArgs e)
 		{

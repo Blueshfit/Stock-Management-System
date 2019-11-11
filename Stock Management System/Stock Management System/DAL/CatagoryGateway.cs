@@ -19,16 +19,18 @@ namespace Stock_Management_System.DAL
 			SqlCommand command = new SqlCommand(query, connection);
 			connection.Open();
 			SqlDataReader reader = command.ExecuteReader();
-			
-			if (reader.Read())
+           
+            if (reader.Read())
 			{
-				return true;
+                connection.Close();
+                return true;
 			}
 			else
 			{
-				return false;
+                connection.Close();
+                return false;
 			}
-			connection.Close();
+			
 		}
 
 		public int InsertCatagory(Catagory catagory)
@@ -59,9 +61,21 @@ namespace Stock_Management_System.DAL
 			}
 			connection.Close();
 			return catagories;
+        }
 
+        public void  UpdateCatagory(int CatagoryId, string CatagoryName)
+        {
+                SqlConnection connection = new SqlConnection(connectionString);
 
-		}
+                string updateQuery = "UPDATE Catagory_tbl SET CatagoryName = @CatagoryName WHERE catagoryId = @catagoryId ";
+                SqlCommand cmd = new SqlCommand(updateQuery, connection);
+                SqlParameter paramEmployeeId = new SqlParameter("@catagoryId ", CatagoryId);
+                cmd.Parameters.Add(paramEmployeeId);
+                SqlParameter paramName = new SqlParameter("@CatagoryName", CatagoryName);
+                cmd.Parameters.Add(paramName);
+                connection.Open();
+                cmd.ExecuteNonQuery();
+        }
 
-	}
+    }
 }

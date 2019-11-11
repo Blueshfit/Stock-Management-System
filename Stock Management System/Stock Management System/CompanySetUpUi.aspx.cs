@@ -18,11 +18,13 @@ namespace Stock_Management_System
             {
                 Response.Redirect("LogInForm.aspx");
             }
-            ShowAllCOmpanies();
+           
+            //ShowAllCOmpanies();
+        }
 
-		}
 
-		protected void saveButton_Click(object sender, EventArgs e)
+
+        protected void saveButton_Click(object sender, EventArgs e)
 		{
 			string companyName = inputCompanyName.Value;
 			string message = SetupCOmpnay(companyName);
@@ -36,7 +38,7 @@ namespace Stock_Management_System
 			{
 				messageLabel.ForeColor = Color.Red;
 			}
-			ShowAllCOmpanies();
+			//ShowAllCOmpanies();
 			inputCompanyName.Value = string.Empty;
 		}
 
@@ -45,13 +47,14 @@ namespace Stock_Management_System
 			CompanyManager companyManager = new CompanyManager();
 			return companyManager.InsertCompany(companyName);
 		}
-		private void ShowAllCOmpanies()
-		{
-			CompanyManager companyManager = new CompanyManager();
-			List<Company> companies = new List<Company>();
-		    companies=companyManager.GetAllCompanies();
-			companyGridView.DataSource = companies;
-			companyGridView.DataBind();
-		}
+		//private void ShowAllCOmpanies()
+		//{
+
+			//List<Company> companies = new List<Company>();
+		 //   companies=companyManager.GetAllCompanies();
+			//companyGridView.DataSource = companies;
+			//companyGridView.DataBind();
+
+		//}
 	}
 }

@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="CompanySetUpUi.aspx.cs" Inherits="Stock_Management_System.CompanySetUpUi" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-	 <asp:Panel ID="Panel1" runat="server" GroupingText="Company Setup">
+     <asp:Panel ID="Panel1" runat="server" GroupingText="Company Setup">
         <div class="form-group">
 
             <label for="inputCompanyName">Name</label>
@@ -10,32 +10,20 @@
             <asp:Button ID="saveButton" runat="server" class="btn btn-primary" Text="Save" OnClick="saveButton_Click" />
 			<br />
 			<asp:Label ID="messageLabel" runat="server" ></asp:Label>
+            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataSourceID="ObjectDataSource1">
+                <Columns>
+                    <asp:CommandField ShowEditButton="True" />
+                    <asp:BoundField DataField="CompanyId" HeaderText="Id"  SortExpression="CompanyId" />
+                    <asp:BoundField DataField="CompanyName" HeaderText="Name" SortExpression="CompanyName" />
+                </Columns>
+            </asp:GridView>
+            <asp:ObjectDataSource ID="ObjectDataSource1" runat="server" SelectMethod="GetAllCompanies" TypeName="Stock_Management_System.DAL.CompanyGateway" UpdateMethod="UpdateCompany">
+                <UpdateParameters>
+                    <asp:Parameter Name="companyId" Type="Int32" />
+                    <asp:Parameter Name="companyName" Type="String" />
+                </UpdateParameters>
+            </asp:ObjectDataSource>
         </div>
-        <asp:GridView ID="companyGridView" runat="server" AutoGenerateColumns="False" CellPadding="4" ForeColor="#333333" GridLines="None">
-            <AlternatingRowStyle BackColor="White" />
-            <Columns>
-                <asp:TemplateField HeaderText="SL">
-                    <ItemTemplate>
-                        <%#Container.DataItemIndex +1 %>
-                    </ItemTemplate>
-                </asp:TemplateField>
 
-                <asp:TemplateField HeaderText="Name">
-                    <ItemTemplate>
-                  <%#Eval("CompanyName") %>
-                    </ItemTemplate>
-                </asp:TemplateField>
-            </Columns>
-            <EditRowStyle BackColor="#2461BF" />
-            <FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
-            <HeaderStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
-            <PagerStyle BackColor="#2461BF" ForeColor="White" HorizontalAlign="Center" />
-            <RowStyle BackColor="#EFF3FB" />
-            <SelectedRowStyle BackColor="#D1DDF1" Font-Bold="True" ForeColor="#333333" />
-            <SortedAscendingCellStyle BackColor="#F5F7FB" />
-            <SortedAscendingHeaderStyle BackColor="#6D95E1" />
-            <SortedDescendingCellStyle BackColor="#E9EBEF" />
-            <SortedDescendingHeaderStyle BackColor="#4870BE" />
-        </asp:GridView>
     </asp:Panel>
 </asp:Content>

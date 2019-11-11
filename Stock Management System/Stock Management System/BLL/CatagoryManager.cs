@@ -12,7 +12,8 @@ namespace Stock_Management_System.BLL
 		CatagoryGateway catagoryGateway = new CatagoryGateway();
 		public string Insertcatagory(Catagory catagory)
 		{
-			if (catagoryGateway.ExistCatagory(catagory))
+            
+            if (catagoryGateway.ExistCatagory(catagory))
 			{
 				return "Already Exist";
 			}
@@ -33,5 +34,11 @@ namespace Stock_Management_System.BLL
 		{
 			return catagoryGateway.GetAllCatagories();
 		}
+
+        public void UpdateCatagoryName(int catagoryId, string catagoryName)
+        {
+            catagoryGateway.UpdateCatagory(catagoryId,catagoryName);
+        }
+
 	}
 }

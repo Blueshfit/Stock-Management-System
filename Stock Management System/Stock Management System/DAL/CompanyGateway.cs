@@ -21,7 +21,7 @@ namespace Stock_Management_System.DAL
 
 			if (reader.Read())
 			{
-				return true;
+                return true;
 			}
 			else
 			{
@@ -38,12 +38,12 @@ namespace Stock_Management_System.DAL
 
 			int rowEffect = command.ExecuteNonQuery();
 			if (rowEffect > 0)
-			{
-				return true;
+            {   
+                return true;
 			}
 			else
-			{
-				return false;
+            {
+                return false;
 			}
 		}
 		public List<Company> GetAllCompanies()
@@ -62,8 +62,20 @@ namespace Stock_Management_System.DAL
 			}
 			connection.Close();
 			return companies;
+        }
 
-
-		}
-	}
+        public void UpdateCompany(int CompanyId, string CompanyName)
+        {
+            SqlConnection connection = new SqlConnection(connectionString);
+            string updateQuery = "UPDATE Company_tbl SET CompanyName = @CompanyName WHERE CompanyId = @CompanyId ";
+            SqlCommand cmd = new SqlCommand(updateQuery, connection);
+            SqlParameter paramEmployeeId = new SqlParameter("@CompanyId", CompanyId);
+            cmd.Parameters.Add(paramEmployeeId);
+            SqlParameter paramName = new SqlParameter("@CompanyName", CompanyName);
+            cmd.Parameters.Add(paramName);
+            connection.Open();
+            cmd.ExecuteNonQuery();
+            
+        }
+    }
 }
