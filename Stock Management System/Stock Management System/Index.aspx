@@ -6,12 +6,12 @@
             <div class="card p-3 mb-2 bg-success text-white" style="width: 18rem;">
                 <div class="embed-responsive embed-responsive-16by9">
             
-                    <img class="card-img-top embed-responsive-item" src="Resources/company.jpg" alt="Card image cap">
+                    <img class="card-img-top embed-responsive-item" src="Resources/productcatagory.jpg" alt="Card image cap">
             
                 </div>
                 <div class="card-body text-center">
                     <h4 class="card-title" >Product Catagory</h4>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <p class="card-text">You can add items and set their catagory from here.</p><br/>
                     <a href="CatagorySetupPage.aspx" class="btn btn-primary btn-sm" >Catagory Setup</a>
                 </div>
             </div>

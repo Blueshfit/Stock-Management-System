@@ -19,8 +19,9 @@
     <webopt:bundlereference runat="server" path="~/Content/css" />
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 </head>
-<body>
+<body background="Resources/background.svg">
 <center>
+   
     <form runat="server">
         <asp:ScriptManager runat="server">
             <Scripts>
@@ -86,6 +87,7 @@
 
 
     </form>
+
 <!– jQuery first, then Popper.js, then Bootstrap JS –>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
     </center>

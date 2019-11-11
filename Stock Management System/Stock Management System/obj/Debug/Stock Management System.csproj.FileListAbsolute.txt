@@ -282,3 +282,74 @@ C:\Users\Kakashi\Desktop\Stock Management System\Stock Management System\obj\Deb
 C:\Users\Kakashi\Desktop\Stock Management System\Stock Management System\obj\Debug\Stock Management System.csproj.CopyComplete
 C:\Users\Kakashi\Desktop\Stock Management System\Stock Management System\obj\Debug\Stock Management System.dll
 C:\Users\Kakashi\Desktop\Stock Management System\Stock Management System\obj\Debug\Stock Management System.pdb
+E:\Study\.net Projects\Stock Management\Stock Management System\Stock Management System\bin\Stock Management System.dll.config
+E:\Study\.net Projects\Stock Management\Stock Management System\Stock Management System\bin\Stock Management System.dll
+E:\Study\.net Projects\Stock Management\Stock Management System\Stock Management System\bin\Stock Management System.pdb
+E:\Study\.net Projects\Stock Management\Stock Management System\Stock Management System\bin\roslyn\csc.exe
+E:\Study\.net Projects\Stock Management\Stock Management System\Stock Management System\bin\roslyn\csc.exe.config
+E:\Study\.net Projects\Stock Management\Stock Management System\Stock Management System\bin\roslyn\csc.rsp
+E:\Study\.net Projects\Stock Management\Stock Management System\Stock Management System\bin\roslyn\csi.exe
+E:\Study\.net Projects\Stock Management\Stock Management System\Stock Management System\bin\roslyn\csi.exe.config
+E:\Study\.net Projects\Stock Management\Stock Management System\Stock Management System\bin\roslyn\csi.rsp
+E:\Study\.net Projects\Stock Management\Stock Management System\Stock Management System\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Study\.net Projects\Stock Management\Stock Management System\Stock Management System\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Study\.net Projects\Stock Management\Stock Management System\Stock Management System\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\Study\.net Projects\Stock Management\Stock Management System\Stock Management System\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Study\.net Projects\Stock Management\Stock Management System\Stock Management System\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\Study\.net Projects\Stock Management\Stock Management System\Stock Management System\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Study\.net Projects\Stock Management\Stock Management System\Stock Management System\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Study\.net Projects\Stock Management\Stock Management System\Stock Management System\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\Study\.net Projects\Stock Management\Stock Management System\Stock Management System\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\Study\.net Projects\Stock Management\Stock Management System\Stock Management System\bin\roslyn\Microsoft.Managed.Core.targets
+E:\Study\.net Projects\Stock Management\Stock Management System\Stock Management System\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Study\.net Projects\Stock Management\Stock Management System\Stock Management System\bin\roslyn\System.AppContext.dll
+E:\Study\.net Projects\Stock Management\Stock Management System\Stock Management System\bin\roslyn\System.Collections.Immutable.dll
+E:\Study\.net Projects\Stock Management\Stock Management System\Stock Management System\bin\roslyn\System.Console.dll
+E:\Study\.net Projects\Stock Management\Stock Management System\Stock Management System\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\Study\.net Projects\Stock Management\Stock Management System\Stock Management System\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\Study\.net Projects\Stock Management\Stock Management System\Stock Management System\bin\roslyn\System.IO.Compression.dll
+E:\Study\.net Projects\Stock Management\Stock Management System\Stock Management System\bin\roslyn\System.IO.FileSystem.dll
+E:\Study\.net Projects\Stock Management\Stock Management System\Stock Management System\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\Study\.net Projects\Stock Management\Stock Management System\Stock Management System\bin\roslyn\System.IO.Pipes.AccessControl.dll
+E:\Study\.net Projects\Stock Management\Stock Management System\Stock Management System\bin\roslyn\System.IO.Pipes.dll
+E:\Study\.net Projects\Stock Management\Stock Management System\Stock Management System\bin\roslyn\System.Reflection.Metadata.dll
+E:\Study\.net Projects\Stock Management\Stock Management System\Stock Management System\bin\roslyn\System.Security.AccessControl.dll
+E:\Study\.net Projects\Stock Management\Stock Management System\Stock Management System\bin\roslyn\System.Security.Claims.dll
+E:\Study\.net Projects\Stock Management\Stock Management System\Stock Management System\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\Study\.net Projects\Stock Management\Stock Management System\Stock Management System\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\Study\.net Projects\Stock Management\Stock Management System\Stock Management System\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\Study\.net Projects\Stock Management\Stock Management System\Stock Management System\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\Study\.net Projects\Stock Management\Stock Management System\Stock Management System\bin\roslyn\System.Security.Principal.Windows.dll
+E:\Study\.net Projects\Stock Management\Stock Management System\Stock Management System\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\Study\.net Projects\Stock Management\Stock Management System\Stock Management System\bin\roslyn\System.ValueTuple.dll
+E:\Study\.net Projects\Stock Management\Stock Management System\Stock Management System\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\Study\.net Projects\Stock Management\Stock Management System\Stock Management System\bin\roslyn\System.Xml.XmlDocument.dll
+E:\Study\.net Projects\Stock Management\Stock Management System\Stock Management System\bin\roslyn\System.Xml.XPath.dll
+E:\Study\.net Projects\Stock Management\Stock Management System\Stock Management System\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\Study\.net Projects\Stock Management\Stock Management System\Stock Management System\bin\roslyn\vbc.exe
+E:\Study\.net Projects\Stock Management\Stock Management System\Stock Management System\bin\roslyn\vbc.exe.config
+E:\Study\.net Projects\Stock Management\Stock Management System\Stock Management System\bin\roslyn\vbc.rsp
+E:\Study\.net Projects\Stock Management\Stock Management System\Stock Management System\bin\roslyn\VBCSCompiler.exe
+E:\Study\.net Projects\Stock Management\Stock Management System\Stock Management System\bin\roslyn\VBCSCompiler.exe.config
+E:\Study\.net Projects\Stock Management\Stock Management System\Stock Management System\bin\Antlr3.Runtime.dll
+E:\Study\.net Projects\Stock Management\Stock Management System\Stock Management System\bin\AspNet.ScriptManager.bootstrap.dll
+E:\Study\.net Projects\Stock Management\Stock Management System\Stock Management System\bin\AspNet.ScriptManager.jQuery.dll
+E:\Study\.net Projects\Stock Management\Stock Management System\Stock Management System\bin\Microsoft.AspNet.FriendlyUrls.dll
+E:\Study\.net Projects\Stock Management\Stock Management System\Stock Management System\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+E:\Study\.net Projects\Stock Management\Stock Management System\Stock Management System\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Study\.net Projects\Stock Management\Stock Management System\Stock Management System\bin\Microsoft.ScriptManager.MSAjax.dll
+E:\Study\.net Projects\Stock Management\Stock Management System\Stock Management System\bin\Microsoft.ScriptManager.WebForms.dll
+E:\Study\.net Projects\Stock Management\Stock Management System\Stock Management System\bin\Microsoft.Web.Infrastructure.dll
+E:\Study\.net Projects\Stock Management\Stock Management System\Stock Management System\bin\Newtonsoft.Json.dll
+E:\Study\.net Projects\Stock Management\Stock Management System\Stock Management System\bin\System.Web.Optimization.dll
+E:\Study\.net Projects\Stock Management\Stock Management System\Stock Management System\bin\WebGrease.dll
+E:\Study\.net Projects\Stock Management\Stock Management System\Stock Management System\bin\System.Web.Optimization.xml
+E:\Study\.net Projects\Stock Management\Stock Management System\Stock Management System\bin\Newtonsoft.Json.xml
+E:\Study\.net Projects\Stock Management\Stock Management System\Stock Management System\bin\Antlr3.Runtime.pdb
+E:\Study\.net Projects\Stock Management\Stock Management System\Stock Management System\bin\Microsoft.AspNet.FriendlyUrls.xml
+E:\Study\.net Projects\Stock Management\Stock Management System\Stock Management System\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Study\.net Projects\Stock Management\Stock Management System\Stock Management System\obj\Debug\Stock Management System.csprojAssemblyReference.cache
+E:\Study\.net Projects\Stock Management\Stock Management System\Stock Management System\obj\Debug\Stock Management System.csproj.CoreCompileInputs.cache
+E:\Study\.net Projects\Stock Management\Stock Management System\Stock Management System\obj\Debug\Stock Management System.csproj.CopyComplete
+E:\Study\.net Projects\Stock Management\Stock Management System\Stock Management System\obj\Debug\Stock Management System.dll
+E:\Study\.net Projects\Stock Management\Stock Management System\Stock Management System\obj\Debug\Stock Management System.pdb

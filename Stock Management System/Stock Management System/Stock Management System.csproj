@@ -131,7 +131,9 @@
     <Content Include="ItemSetupUi.aspx" />
     <Content Include="LogInForm.aspx" />
     <Content Include="LogOut.aspx" />
+    <Content Include="Resources\background.svg" />
     <Content Include="Resources\company.jpg" />
+    <Content Include="Resources\productcatagory.jpg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
