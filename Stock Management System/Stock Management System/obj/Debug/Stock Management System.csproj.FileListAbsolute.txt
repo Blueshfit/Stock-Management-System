@@ -263,6 +263,7 @@ E:\Project Clone\Stock-Management-System\Stock Management System\Stock Managemen
 E:\Project Clone\Stock-Management-System\Stock Management System\Stock Management System\bin\Antlr3.Runtime.dll
 E:\Project Clone\Stock-Management-System\Stock Management System\Stock Management System\bin\AspNet.ScriptManager.bootstrap.dll
 E:\Project Clone\Stock-Management-System\Stock Management System\Stock Management System\bin\AspNet.ScriptManager.jQuery.dll
+E:\Project Clone\Stock-Management-System\Stock Management System\Stock Management System\bin\itextsharp.dll
 E:\Project Clone\Stock-Management-System\Stock Management System\Stock Management System\bin\Microsoft.AspNet.FriendlyUrls.dll
 E:\Project Clone\Stock-Management-System\Stock Management System\Stock Management System\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
 E:\Project Clone\Stock-Management-System\Stock Management System\Stock Management System\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
@@ -272,6 +273,7 @@ E:\Project Clone\Stock-Management-System\Stock Management System\Stock Managemen
 E:\Project Clone\Stock-Management-System\Stock Management System\Stock Management System\bin\Newtonsoft.Json.dll
 E:\Project Clone\Stock-Management-System\Stock Management System\Stock Management System\bin\System.Web.Optimization.dll
 E:\Project Clone\Stock-Management-System\Stock Management System\Stock Management System\bin\WebGrease.dll
+E:\Project Clone\Stock-Management-System\Stock Management System\Stock Management System\bin\itextsharp.xml
 E:\Project Clone\Stock-Management-System\Stock Management System\Stock Management System\bin\System.Web.Optimization.xml
 E:\Project Clone\Stock-Management-System\Stock Management System\Stock Management System\bin\Newtonsoft.Json.xml
 E:\Project Clone\Stock-Management-System\Stock Management System\Stock Management System\bin\Antlr3.Runtime.pdb

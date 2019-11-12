@@ -33,5 +33,101 @@ namespace Stock_Management_System.DAL
 			return items;
 
 		}
+		public Item GetItem(int itemId)
+		{
+			SqlConnection connection = new SqlConnection(connectionString);
+
+			string query = "SELECT * FROM Item_tbl WHERE ItemId =" + itemId + "";
+			SqlCommand command = new SqlCommand(query, connection);
+			connection.Open();
+			SqlDataReader reader = command.ExecuteReader();
+			Item item = new Item();
+			while (reader.Read())
+			{
+				item.ReorderLevel = reader["ReorderLevel"].ToString();
+				item.Quantity = reader["Quantity"].ToString();
+			}
+			connection.Close();
+			return item;
+		}
+		public bool StockInItemQuantity(Item item)
+		{
+			double quantity;
+			SqlConnection connection = new SqlConnection(connectionString);
+			string query = "SELECT Quantity FROM Item_tbl WHERE ItemId ='" + item.ItemId + "' AND CompanyId ='" + item.ComapnyId + "'";
+			SqlCommand command = new SqlCommand(query, connection);
+			connection.Open();
+			SqlDataReader reader = command.ExecuteReader();
+			
+			Item aItem = new Item();
+			while (reader.Read())
+			{
+				 aItem.Quantity=reader["Quantity"].ToString();
+				
+
+			}
+			connection.Close();
+			quantity = Convert.ToDouble(aItem.Quantity);
+			
+			double stockIn = Convert.ToInt32(item.Quantity);
+			double availableQuantity = quantity + stockIn;
+			string inputQuantity = availableQuantity.ToString();
+			string updateQuery = "UPDATE Item_tbl SET Quantity ='" + inputQuantity + "' WHERE ItemId= " + item.ItemId + " AND CompanyId =" + item.ComapnyId + "";
+			SqlCommand command1 = new SqlCommand(updateQuery, connection);
+			connection.Open();
+			int rowEffect = command1.ExecuteNonQuery();
+			if (rowEffect > 0)
+			{
+				return true;
+			}
+			else
+			{
+				return false;
+			}
+
+		}
+		public bool StockOutItemQuantity(Item item)
+		{
+			double quantity;
+			SqlConnection connection = new SqlConnection(connectionString);
+			string query = "SELECT Quantity FROM Item_tbl WHERE ItemId ='" + item.ItemId + "' AND CompanyId ='" + item.ComapnyId + "'";
+			SqlCommand command = new SqlCommand(query, connection);
+			connection.Open();
+			SqlDataReader reader = command.ExecuteReader();
+
+			Item aItem = new Item();
+			while (reader.Read())
+			{
+				aItem.Quantity = reader["Quantity"].ToString();
+
+
+			}
+			connection.Close();
+			quantity = Convert.ToDouble(aItem.Quantity);
+
+			double stockIn = Convert.ToInt32(item.Quantity);
+			if (stockIn > quantity)
+			{
+				return false;
+			}
+			else
+			{
+				double availableQuantity = quantity - stockIn;
+
+				string inputQuantity = availableQuantity.ToString();
+				string updateQuery = "UPDATE Item_tbl SET Quantity ='" + inputQuantity + "' WHERE ItemId= " + item.ItemId + " AND CompanyId =" + item.ComapnyId + "";
+				SqlCommand command1 = new SqlCommand(updateQuery, connection);
+				connection.Open();
+				int rowEffect = command1.ExecuteNonQuery();
+				if (rowEffect > 0)
+				{
+					return true;
+				}
+				else
+				{
+					return false;
+				}
+			}
+		}
 	}
 }
