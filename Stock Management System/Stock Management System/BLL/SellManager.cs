@@ -10,9 +10,9 @@ namespace Stock_Management_System.BLL
 	public class SellManager
 	{
 		SellGateway sellGateway = new SellGateway();
-		public void InsertSell(Item item)
+		public void InsertSell(List<Stockout>stockouts)
 		{
-			sellGateway.InsertSell(item);
+			sellGateway.InsertSell(stockouts);
 		}
 		public List<Sell> GetAllSellitemBetweenDate(string fromDate,string toDate)
 		{

@@ -12,6 +12,7 @@ namespace Stock_Management_System.BLL
 		CatagoryGateway catagoryGateway = new CatagoryGateway();
 		public string Insertcatagory(Catagory catagory)
 		{
+			
 			if (catagoryGateway.ExistCatagory(catagory))
 			{
 				return "Already Exist";

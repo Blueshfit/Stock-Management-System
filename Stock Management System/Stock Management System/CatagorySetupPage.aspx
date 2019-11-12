@@ -8,6 +8,7 @@
             <label for="catagoryId" class="col-sm-2 col-form-label">Name</label>
             <div class="col-sm-10">
                 <input type="text" class="form-control" id="catagoryId" runat="server" placeholder="Product Catagory" required>&nbsp;
+				<asp:RequiredFieldValidator ID="RequiredFieldValidator1" Display="Dynamic" runat="server" ControlToValidate="catagoryId" ForeColor="Red" ErrorMessage="Field can not be empty"></asp:RequiredFieldValidator>
                 <div> <asp:Button ID="catagorySaveButton" runat="server" class="btn btn-primary"  Text="Save" OnClick="catagorySaveButton_Click" /></div>
 				<asp:Label ID="messageLabel" runat="server" ></asp:Label>
                

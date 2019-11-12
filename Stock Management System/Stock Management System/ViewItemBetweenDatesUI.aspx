@@ -12,11 +12,12 @@
     </div>
   </div>
 	<div class="form-group row">
-    <label for="toDateTextBox" class="col-sm-2 col-form-label">From Date</label>
+    <label for="toDateTextBox" class="col-sm-2 col-form-label">To Date</label>
     <div class="col-sm-4">
       <input type="date" class="form-control" runat="server" id="toDateTextBox" >
     </div>
   </div>
+	<asp:Label ID="messageLabel" runat="server" ></asp:Label>
 	 <div class="col-sm-4">
 		 <asp:Button ID="searchButton" runat="server" Text="Search" OnClick="searchButton_Click" />
     </div>

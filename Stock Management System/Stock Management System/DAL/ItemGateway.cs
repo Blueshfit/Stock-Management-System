@@ -12,10 +12,41 @@ namespace Stock_Management_System.DAL
 	public class ItemGateway
 	{
 		string connectionString = WebConfigurationManager.ConnectionStrings["SMDB"].ConnectionString;
+		public bool IsExistItem(Item item)
+		{
+			SqlConnection connection = new SqlConnection(connectionString);
+			string query = "SELECT * FROM Item_tbl WHERE  ItemName ='" + item.ItemName + "' AND CompanyId =" + item.ComapnyId + "";
+			SqlCommand command = new SqlCommand(query, connection);
+			connection.Open();
+			SqlDataReader reader = command.ExecuteReader();
+			if (reader.Read())
+			{
+				return true;
+			}
+			else
+			{
+				return false;
+			}
+
+		}
 		public bool InsertItem(Item item)
 		{
 			SqlConnection connection = new SqlConnection(connectionString);
 			string query = "INSERT INTO Item_tbl (ItemName, CatagoryId, CompanyId, ReorderLevel,Quantity) VALUES('"+item.ItemName+"','"+item.CatagoryId+"','"+item.ComapnyId+"','"+item.ReorderLevel+"','"+0+"')";
+			SqlCommand command = new SqlCommand(query, connection);
+			connection.Open();
+			int rowEffect = command.ExecuteNonQuery();
+			connection.Close();
+			if (rowEffect > 0)
+			{
+				return true;
+			}
+			else { return false; }
+		}
+		public bool UpdateItem(Item item)
+		{
+			SqlConnection connection = new SqlConnection(connectionString);
+			string query = "UPDATE Item_tbl SET ReorderLevel = '" + item.ReorderLevel + "' WHERE ItemName ='" + item.ItemName + "' AND CompanyId =" + item.ComapnyId + "";
 			SqlCommand command = new SqlCommand(query, connection);
 			connection.Open();
 			int rowEffect = command.ExecuteNonQuery();

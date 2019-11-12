@@ -2,6 +2,7 @@
 using Stock_Management_System.Models;
 using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -20,6 +21,15 @@ namespace Stock_Management_System
 		{
 			string fromDate = fromDateTextBox.Value;
 			string toDate = toDateTextBox.Value;
+			DateTime aDate = Convert.ToDateTime(fromDate);
+			DateTime bDate = Convert.ToDateTime(toDate);
+			int result = DateTime.Compare(aDate, bDate);
+			if (result > 0)
+			{
+				messageLabel.Text = "Date is not correct";
+				messageLabel.ForeColor = Color.Red;
+			}
+
 			GetAllItemSell(fromDate, toDate);
 		}
 

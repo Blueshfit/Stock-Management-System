@@ -14,15 +14,18 @@ namespace Stock_Management_System
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+			int companyId;
 			if (!IsPostBack)
 			{
 				BindAllCompany();
 
-				int companyId = Convert.ToInt32(companyDropDownList.SelectedValue);
-				BindAllItem(companyId);
+			     companyId = Convert.ToInt32(companyDropDownList.SelectedValue);
+				//BindAllItem(companyId);
 			}
+			 companyId = Convert.ToInt32(companyDropDownList.SelectedValue);
+			BindAllItem(companyId);
 
-        }
+		}
 		private void BindAllCompany()
 		{
 			CompanyManager companyManager = new CompanyManager();

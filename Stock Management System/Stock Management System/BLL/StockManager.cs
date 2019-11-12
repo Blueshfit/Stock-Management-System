@@ -1,5 +1,6 @@
 ﻿using Stock_Management_System.DAL;
 using Stock_Management_System.Models;
+using Stock_Management_System.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -29,15 +30,24 @@ namespace Stock_Management_System.BLL
 				return "Cannot stockin in items.";
 			}
 		}
-		public string StockOutQuantity(Item item)
+		public void StockOutQuantity(List<Stockout> stockouts)
 		{
-			if (stockgateway.StockOutItemQuantity(item))
+			stockgateway.StockOutItemQuantity(stockouts);
+		
+		}
+		public ItemCompanyWIseView GetStcokOutItem(Item item)
+		{
+			return stockgateway.GetStockOutItem(item);
+		}
+		public bool IsGeaterQuanity(Item item)
+		{
+			if (stockgateway.IsGeaterQuanity(item))
 			{
-				return "Successfully stocked out items.";
+				return true;
 			}
 			else
 			{
-				return "Cannot stockin out items.";
+				return false; 
 			}
 		}
 	}

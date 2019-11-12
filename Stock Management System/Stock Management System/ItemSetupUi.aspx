@@ -16,6 +16,7 @@
                 <label for="inputItemName" class="col-sm-2 col-form-label">Item name</label>
                 <div class="col-sm-10">
                     <input type="text" runat="server" class="form-control" id="inputItemName"/>
+					<asp:RequiredFieldValidator ID="RequiredFieldValidator1" ControlToValidate="inputItemName" Display="Dynamic" ForeColor="Red"  runat="server" ErrorMessage="Name Field can not be emtpy"></asp:RequiredFieldValidator>
                 </div>
             </div>
             
@@ -23,6 +24,7 @@
                 <label for="inputReorderLevel" class="col-sm-2 col-form-label">Reorder Level</label>
                 <div class="col-sm-10">
                     <input type="text" runat="server" class="form-control" id="inputReorderLevel"/>
+					<asp:CompareValidator ID="CompareValidator1" ControlToValidate="inputReorderLevel" Type="Integer" Operator="DataTypeCheck" ForeColor="Red" runat="server" ErrorMessage="Reorder level must be number"></asp:CompareValidator>
                 </div>
             </div>
         </div>

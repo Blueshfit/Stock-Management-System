@@ -6,6 +6,7 @@
             <label for="inputCompanyName">Name</label>
             <br />
             <input type="text" id="inputCompanyName" runat="server" class="form-control" />
+			<asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server"  ControlToValidate="inputCompanyName" Display="Dynamic" ForeColor="Red" ErrorMessage="Field can not be empty"></asp:RequiredFieldValidator>
             <br />
             <asp:Button ID="saveButton" runat="server" class="btn btn-primary" Text="Save" OnClick="saveButton_Click" />
 			<br />

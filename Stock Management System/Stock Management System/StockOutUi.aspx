@@ -20,39 +20,15 @@
     <asp:Label ID="stockOutQuantityLabel" runat="server" Text="Stock Out Quantity"></asp:Label>
     <asp:TextBox ID="stockOutQuantityTextBox" runat="server"></asp:TextBox>
     <br />
-
-    <asp:Button ID="sellButton" runat="server" Text="Sell" OnClick="sellButton_Click" />
-    <asp:Button ID="damageButton" runat="server" Text="Damage" OnClick="damageButton_Click" />
-    <asp:Button ID="lostButton" runat="server" Text="Lost" OnClick="lostButton_Click" />
+	<asp:Button ID="addButton" runat="server" Text="Add" OnClick="addButton_Click" />
+   
 	<br />
     <br />
 	<asp:Label ID="messageLabel" runat="server" ></asp:Label>
 
-    <asp:GridView ID="stockOutGridView" runat="server" AutoGenerateColumns="False" CellPadding="4" ForeColor="#333333" GridLines="None">
+    <asp:GridView ID="stockOutGridView" runat="server"  CellPadding="4" ForeColor="#333333" GridLines="None">
         <AlternatingRowStyle BackColor="White" />
-        <Columns>
-            <asp:TemplateField HeaderText="SL#">
-                <ItemTemplate>
-                    <%#Eval("StockOutId") %>
-                </ItemTemplate>
-            </asp:TemplateField>
-            <asp:TemplateField HeaderText="Item">
-                <ItemTemplate>
-                    <%#Eval("ItemName") %>
-                </ItemTemplate>
-            </asp:TemplateField>
-            <asp:TemplateField HeaderText="Company">
-                <ItemTemplate>
-                    <%#Eval("CompanyName") %>
-                </ItemTemplate>
-            </asp:TemplateField>
-            <asp:TemplateField HeaderText="Quantity">
-                <ItemTemplate>
-                    <%#Eval("Quantity") %>
-                </ItemTemplate>
-            </asp:TemplateField>
-        </Columns>
-
+      
         <EditRowStyle BackColor="#2461BF" />
         <FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
         <HeaderStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
@@ -65,5 +41,8 @@
         <SortedDescendingHeaderStyle BackColor="#4870BE" />
     </asp:GridView>
     <br />
+	 <asp:Button ID="sellButton" runat="server" Text="Sell" OnClick="sellButton_Click" />
+    <asp:Button ID="damageButton" runat="server" Text="Damage" OnClick="damageButton_Click" />
+    <asp:Button ID="lostButton" runat="server" Text="Lost" OnClick="lostButton_Click" />
    
 </asp:Content>

@@ -65,6 +65,10 @@ namespace Stock_Management_System
 			{
 				messageLabel.ForeColor = Color.Green;
 			}
+			else if(message== "Reorder level updated successfully")
+			{
+				messageLabel.ForeColor = Color.Green;
+			}
 			else
 			{
 				messageLabel.ForeColor = Color.Red;

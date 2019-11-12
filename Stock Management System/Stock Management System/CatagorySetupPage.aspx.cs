@@ -20,6 +20,7 @@ namespace Stock_Management_System
 		protected void catagorySaveButton_Click(object sender, EventArgs e)
 		{
 			string catagoryName = catagoryId.Value;
+			
 			Catagory catagory = new Catagory(catagoryName);
 			string message=InsertCatagroy(catagory);
 			messageLabel.Text = message;

@@ -13,13 +13,32 @@ namespace Stock_Management_System.BLL
 		ItemGateway itemGateway = new ItemGateway();
 		public string InsertItem(Item item)
 		{
+			if (itemGateway.IsExistItem(item))
+			{
+				if (item.ReorderLevel == "0")
+				{
+					return "Already exist";
+				}
+				else
+				{
+					if (itemGateway.UpdateItem(item))
+					{
+						return "Reorder level updated successfully";
+					}
+				}
+			}
 			if (item.Quantity ==string.Empty)
 			{
 				item.Quantity = "0";
 			}
+			
 			else
 			{
 				item.Quantity = item.Quantity;
+			}
+			if (item.ReorderLevel == string.Empty)
+			{
+				item.ReorderLevel = "0";
 			}
 			if (itemGateway.InsertItem(item))
 			{

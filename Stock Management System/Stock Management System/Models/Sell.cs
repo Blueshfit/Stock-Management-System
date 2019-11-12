@@ -35,5 +35,6 @@ namespace Stock_Management_System.Models
 		public string SellDate { set; get; }
 		public string ItemName { set; get; }
 		public string Quantity { set; get; }
+		
 	}
 }

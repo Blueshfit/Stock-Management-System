@@ -19,8 +19,10 @@
 
     <asp:Label ID="stockInQuantityLabel" runat="server" Text="Stock In Quantity"></asp:Label>
     <asp:TextBox ID="stockInQuantityTextBox" runat="server"></asp:TextBox>
+	<asp:RequiredFieldValidator ID="RequiredFieldValidator1" ControlToValidate="stockInQuantityTextBox" ForeColor="Red" runat="server" Display="Dynamic" ErrorMessage="Can not be empty"></asp:RequiredFieldValidator>
+	<asp:CompareValidator ID="CompareValidator1" ControlToValidate="stockInQuantityTextBox" Display="Dynamic" Operator="DataTypeCheck" Type="Integer"  ForeColor="Red" runat="server" ErrorMessage="Stock in must be number"></asp:CompareValidator>
     <br />
 	<asp:Label ID="messageLabel" runat="server" ></asp:Label>
 
-    <asp:Button ID="saveButton" runat="server" Text="Save" OnClick="saveButton_Click" />
+    <asp:Button ID="saveButton" runat="server" Text="Save" OnClick="saveButton_Click" style="height: 26px" />
 </asp:Content>
